@@ -1,8 +1,14 @@
 export interface Inotes {
   id: string;
+  newsId: string;
+  name: string;
+  email: string;
   title: string;
-  text: string;
-  color: string;
-  date: string;
+  category: string;
+  content: string;
+  image: string;
+  date_created: string;
 }
 [];
+
+

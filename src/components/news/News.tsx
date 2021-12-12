@@ -6,6 +6,8 @@ import NewsList from './NewsList'
 const News = () => {
     return (
         <div>
+            <Header />
+            <NewsHero />
             <NewsList />
         </div>
     )

@@ -3,21 +3,20 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Header from "./components/layouts/Header";
+import Login from "./components/auth/Login";
+import CreateNews from "./components/news/CreateNews";
 import News from "./components/news/News";
-import NewsHero from "./components/news/NewsHero";
 
 function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      <NewsHero />
-
-      <BrowserRouter>
+       <BrowserRouter>
         <Routes>
           <Route path="/" element={<News />} />
-          {/* <Route path="/news" element={<Experiences />} /> */}
+          <Route path="/create-news" element={<CreateNews />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
