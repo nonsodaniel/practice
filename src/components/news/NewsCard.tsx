@@ -11,12 +11,15 @@ const NewsCard = ({ news }: InewsList) => {
             <div className="card shadow-sm">
 
                 <div className="image bd-placeholder-img card-img-top" >
-                    <img src={news.image} alt={news.image} />
+                    <img src={news.image} className="img" alt={news.image} />
                 </div>
                 <div className="card-body">
 
-                    <h6>{news.title}</h6>
-                    <h6 className="text-right">{news.category}</h6>
+                    <h6 className="title">{news.title}</h6>
+                    <div className="top d-flex justify-content-between">
+                        <h6 className="text-left">By: {news.name}</h6>
+                        <h6 className="text-right">{news.category}</h6>
+                    </div>
                     <p className="card-text">{news.content}</p>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">

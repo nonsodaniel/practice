@@ -5,7 +5,6 @@ import { Inotes } from '../../models/news.model';
 import { uid, userData } from '../utils/constants';
 
 const CreateNews = () => {
-    // const [name, setName] = useState<string | null>(null)
     const [title, setTitle] = useState<string | null>(null)
     const [category, setCategory] = useState<string | null>(null)
     const [content, setContent] = useState<string | null>(null)

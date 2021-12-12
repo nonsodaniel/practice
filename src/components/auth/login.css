@@ -59,3 +59,19 @@ text-align: left;
 .image{
   height: 10rem;
 }
+.card{
+  height: 28rem;
+}
+.card-text{
+  overflow-y: scroll;
+  min-height: 8rem;
+  font-size: 14px;
+}
+.img{
+  height: 100%;
+  width: 100%;
+}
+.title{
+  font-size: 15px;
+  max-height: 6rem;
+}
